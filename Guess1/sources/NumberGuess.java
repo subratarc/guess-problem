@@ -4,7 +4,7 @@ public class NumberGuess {
 	
 	int getExact (int actual, int predicted) throws Exception
 	{
-		//System.out.println("ActualInput int: " + actual + " PredictedInput int: " + predicted);
+		System.out.println("ActualInput int: " + actual + " PredictedInput int: " + predicted);
 		if (actual < 0 || predicted < 0)  
 			throw new IllegalArgumentException("Negative number inputs not allowed");
 		return computeExact(Integer.toString(actual), Integer.toString(predicted));	
